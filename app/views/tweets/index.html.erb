@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>myblog</title>
+    <title>忍瓦版</title>
   </head>
   <body>
     <header>
-      <h1>myblog</h1>
+      <h1>忍者好きの忍者好きのための瓦版</h1>
     </header>
 
     <div class="contents">
-       <% @tweets.each do |tweet| %>
-       <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-        <%= simple_format(tweet.text) %>
-        <span class="name"><%= tweet.name %></span>
+      <div class="cont-area-warap">
+        <div class="cont-area-nwes-warap">
+          <a href="nwes-cont">
+            <p class="img">
+            </p>
+            <div class="info">
+              <p class="title">
+            </div>
+          </a>
+        </div>
       </div>
-      <% end %>
     </div>
   </body>
 </html>
